@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "138cd138-1f04-45ee-9680-dc0c03efeca2",
+		"name": "API Tienda Startk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SIN TOKEN PROBAR READ VEHICULO",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_read/ALAN67/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_read",
+						"ALAN67",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIN TOKEN PROBAR READ ALL VEHICULO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_read_all/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_read_all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIN TOKEN PROBAR CREATE VEHICULO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "BBBB75",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "Ferrari",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "Ferrari de Tony 1975",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": "/C:/Users/cgome/OneDrive/Pictures/boleto.jpg"
+						},
+						{
+							"key": "categoria",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIN TOKEN PROBAR DELETE VEHICULO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "BBBB75",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "Ferrari",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "Ferrari de Tony 1975",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": "/C:/Users/cgome/OneDrive/Pictures/boleto.jpg"
+						},
+						{
+							"key": "categoria",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_create/?=ALAN67",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_create",
+						""
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "ALAN67"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROBAR LOGIN",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"usuario_staff\",\r\n    \"password\": \"Duoc@123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CON TOKEN PROBAR READ VEHICULO",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token afe96293360fca0f3954d569a195a13fc3013063",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_read/ALAN67/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_read",
+						"ALAN67",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CON TOKEN PROBAR READ ALL VEHICULO",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token afe96293360fca0f3954d569a195a13fc3013063",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_read_all/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_read_all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CON TOKEN PROBAR CREATE VEHICULO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token afe96293360fca0f3954d569a195a13fc3013063",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "BBBB75",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "Ferrari",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "Ferrari de Tony 1975",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": "/C:/Users/cgome/OneDrive/Pictures/boleto.jpg"
+						},
+						{
+							"key": "categoria",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CON TOKEN PROBAR DELETE VEHICULO",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token afe96293360fca0f3954d569a195a13fc3013063",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "BBBB75",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "Ferrari",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "Ferrari de Tony 1975",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": "/C:/Users/cgome/OneDrive/Pictures/boleto.jpg"
+						},
+						{
+							"key": "categoria",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vehiculo_create/ALAN67/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculo_create",
+						"ALAN67",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
